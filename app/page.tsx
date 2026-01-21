@@ -137,7 +137,7 @@ export default function Home() {
 
           <h1 className="text-6xl md:text-8xl font-black mb-6">
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
-              Wildlife Guard
+            AI-Powered Wildlife Crime Hotspot Prediction and Prevention System
             </span>
           </h1>
 

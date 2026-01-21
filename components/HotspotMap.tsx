@@ -41,11 +41,13 @@ export default function HotspotMap({ hotspots }: { hotspots: any[] }) {
     )
   }
 
-  const getColor = (risk: number) => {
-    if (risk > 70) return '#ef4444' // red
-    if (risk > 40) return '#eab308' // yellow
-    return '#22c55e' // green
+  const getColor = (riskLevel: string) => {
+    if (riskLevel === 'High') return '#ef4444'    // red
+    if (riskLevel === 'Medium') return '#eab308'  // yellow
+    if (riskLevel === 'Low') return '#22c55e'     // green
+    return '#94a3b8'
   }
+  
 
   const getRadius = (risk: number) => {
     return Math. max(8, Math.min(30, (risk / 100) * 35))
@@ -68,7 +70,8 @@ export default function HotspotMap({ hotspots }: { hotspots: any[] }) {
           key={`${spot.name}-${i}`}
           center={[spot.lat, spot. lng]}
           radius={getRadius(spot.risk)}
-          fillColor={getColor(spot.risk)}
+          fillColor={getColor(spot.risk_level)}
+
           color="#fff"
           weight={2}
           opacity={0.9}
