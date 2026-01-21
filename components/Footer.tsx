@@ -30,7 +30,7 @@ export default function Footer() {
             <h3 className="text-white font-bold text-lg mb-4">Connect</h3>
             <div className="flex gap-4">
               <motion.a 
-                href="#" 
+                href="https://github.com/Siddhanthkjain2005/wildlife-guard" 
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className="bg-slate-800 p-3 rounded-lg hover: bg-purple-500/20 transition-colors"
               >
@@ -44,7 +44,7 @@ export default function Footer() {
                 <Twitter className="w-5 h-5 text-slate-400" />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="mailto:sidk9902@gmail.com" 
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className="bg-slate-800 p-3 rounded-lg hover:bg-purple-500/20 transition-colors"
               >
